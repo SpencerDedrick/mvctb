@@ -2,13 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const NavWrapper = styled.nav`
-  width: 100vw;
-  background-color: #232323;
-  height: 65px;
+  display: flex;
+  color: white;
 `;
 
 const Navbar = () => {
-  return <NavWrapper></NavWrapper>;
+  return (
+    <NavWrapper>
+      <h1>MVCTB</h1>>
+    </NavWrapper>
+  );
 };
 
 export default Navbar;
