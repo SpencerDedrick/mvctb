@@ -8,7 +8,7 @@ const NavWrapper = styled.nav`
   height: 90px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0.5rem 1.5rem 0 1.5rem;
 
   .navbar-logo {
     font-size: 24px;

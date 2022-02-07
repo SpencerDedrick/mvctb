@@ -3,18 +3,20 @@ import Marquee from "react-fast-marquee";
 import styled from "styled-components";
 
 const StyledMarquee = styled.div`
-  font-size: 48px;
+  font-size: 3rem;
   text-transform: uppercase;
   color: white;
+  margin-bottom: 1rem;
 
   span {
-    margin: 0 10px;
+    margin: 0 1rem;
   }
 `;
 function HeaderMarquee() {
   return (
-    <Marquee gradient={false} speed={70}>
+    <Marquee gradient={false} speed={90}>
       <StyledMarquee>
+        <span />
         <span>Select</span>
         <span>Your</span>
         <span>Heroes</span>
