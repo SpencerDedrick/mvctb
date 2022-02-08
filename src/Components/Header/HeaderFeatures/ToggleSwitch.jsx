@@ -6,13 +6,14 @@ const StyledToggle = styled.label`
   display: inline-block;
   width: 60px;
   height: 34px;
+  -webkit-tap-highlight-color: transparent;
 
-  .switch input {
+  input {
     opacity: 0;
-    width: 0;
-    height: 0;
+    width: 10;
+    height: 10;
   }
-  /* toggle circle container/background */
+  /* toggle switch/slider container/background */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -30,10 +31,10 @@ const StyledToggle = styled.label`
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 25px;
+    width: 25px;
     left: 4px;
-    bottom: 4px;
+    bottom: 3px;
     background-color: white;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -41,17 +42,13 @@ const StyledToggle = styled.label`
 
   /* toggle circle container/background when checked */
   input:checked + .slider {
-    background-color: white;
-  }
-
-  input:focus + .slider {
-    box-shadow: 0 0 1px #red;
+    background-color: #ff3a3a;
   }
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
   }
 
   /* Rounded sliders */
@@ -67,7 +64,7 @@ const StyledToggle = styled.label`
 const ToggleSwitch = () => {
   return (
     <StyledToggle className="switch">
-      <input type="checkbox" />
+      <input className="inputToggle" type="checkbox" />
       <span class="slider round"></span>
     </StyledToggle>
   );

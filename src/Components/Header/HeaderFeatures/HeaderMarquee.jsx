@@ -7,14 +7,15 @@ const StyledMarquee = styled.div`
   text-transform: uppercase;
   color: white;
   margin-bottom: 1rem;
+  font-weight: 900;
 
   span {
-    margin: 0 1rem;
+    margin: 0 0.8rem;
   }
 `;
 function HeaderMarquee() {
   return (
-    <Marquee gradient={false} speed={90}>
+    <Marquee gradient={false} speed={100}>
       <StyledMarquee>
         <span />
         <span>Select</span>
