@@ -59,6 +59,14 @@ const StyledToggle = styled.label`
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .slider + span {
+    color: white;
+    position: absolute;
+    bottom: -20px;
+    left: 12px;
+    font-size: 1.2rem;
+  }
 `;
 
 const ToggleSwitch = () => {
@@ -66,6 +74,7 @@ const ToggleSwitch = () => {
     <StyledToggle className="switch">
       <input className="inputToggle" type="checkbox" />
       <span class="slider round"></span>
+      <span>RATIO</span>
     </StyledToggle>
   );
 };
