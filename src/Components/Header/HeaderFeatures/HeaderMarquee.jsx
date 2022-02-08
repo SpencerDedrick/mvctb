@@ -3,10 +3,9 @@ import Marquee from "react-fast-marquee";
 import styled from "styled-components";
 
 const StyledMarquee = styled.div`
-  font-size: 3rem;
+  font-size: 4.8rem;
   text-transform: uppercase;
   color: white;
-  margin-bottom: 1rem;
   font-weight: 900;
 
   span {

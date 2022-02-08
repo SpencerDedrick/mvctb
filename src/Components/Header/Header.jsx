@@ -10,13 +10,14 @@ import ToggleSwitch from "./HeaderFeatures/ToggleSwitch";
 const StyledHeader = styled.header`
   .searchbar-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    margin: 2rem 1.5rem;
   }
 
   .header-instructions {
-    margin: 1rem;
+    margin: 1.5rem 2rem;
+    font-size: 1.4rem;
     color: white;
     display: inline-block;
   }
