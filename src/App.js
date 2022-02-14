@@ -2,7 +2,7 @@ import "./App.css";
 import CharacterGrid from "./Components/CharacterSelect/CharacterGrid";
 import Header from "./Components/Header/Header";
 import Button from "./Components/CharacterSelect/Button";
-import CharacterCard from "./Components/CharacterCard/CharacterCard";
+import CharacterCardContainer from "./Components/CharacterCard/CharacterCardContainer";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <CharacterGrid />
       <Button />
-      <CharacterCard />
+      <CharacterCardContainer />
     </div>
   );
 }
