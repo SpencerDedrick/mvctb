@@ -3,14 +3,18 @@ import CharacterGrid from "./Components/CharacterSelect/CharacterGrid";
 import Header from "./Components/Header/Header";
 import Button from "./Components/CharacterSelect/Button";
 import CharacterCardContainer from "./Components/CharacterCard/CharacterCardContainer";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <CharacterGrid />
-      <Button />
+      <div className="button-container">
+        <Button />
+      </div>
       <CharacterCardContainer />
+      <Footer />
     </div>
   );
 }

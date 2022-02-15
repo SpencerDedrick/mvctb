@@ -4,7 +4,8 @@ import CharacterCard from "./CharacterCard";
 
 const StyledCardContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 1rem 0.5rem;
 `;
 const CharacterCardContainer = () => {
   return (

@@ -5,6 +5,8 @@ html {
   background-position: center;
   background-size: cover;
   width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
   height: 100vh;
   font-size: 10px;
 }
@@ -19,4 +21,10 @@ body * {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.button-container {
+  display: flex;
+  margin: 2rem 0.5rem;
+  justify-content: end;
 }

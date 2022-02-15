@@ -5,17 +5,27 @@ import { FaPlus } from "react-icons/fa";
 const StyledCharacterCard = styled.div`
   position: relative;
   height: 130px;
-  width: 30%;
+  max-width: 30%;
+  min-width: 110px;
   color: white;
   border-radius: 2px;
   border: 2px white solid;
-  background: blue;
-  font-size: 1.4rem;
-  background-image: url("https://static.wikia.nocookie.net/marvelvscapcom/images/a/a5/Mvc2-cyclops.jpg/revision/latest/scale-to-width-down/500?cb=20080205042843");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  font-size: 1.2rem;
 
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 18px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% - 18px);
+    background-image: url("https://tiermaker.com/images/chart/chart/mvc2-coolest-character-tier-list-269223/b29348a725fc4b6f202ac5b671fa05c2-650-80jpg.png");
+    background-position: center;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   * {
     box-sizing: border-box;
   }
@@ -47,7 +57,7 @@ const StyledCharacterCard = styled.div`
 const CharacterCard = () => {
   return (
     <StyledCharacterCard>
-      <span class="character-card-name">Character Name</span>
+      <span class="character-card-name">Cyclops</span>
       <span class="character-card-assist">
         Assist Name<FaPlus></FaPlus>
       </span>
